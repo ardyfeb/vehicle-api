@@ -7,6 +7,7 @@ import { vehicleBrandsRouter } from './handlers/vehicle-brands/router.js'
 import { vehicleModelsRouter } from './handlers/vehicle-models/router.js'
 import { vehicleYearsRouter } from './handlers/vehicle-year/router.js'
 import { priceListsRouter } from './handlers/pricelist/router.js'
+import { usersRouter } from './handlers/user/router.js'
 import { makeErrorResponse } from './utils.js'
 
 dotenv.config()
@@ -23,6 +24,7 @@ app.use('/vehicle-types', vehicleTypesRouter)
 app.use('/vehicle-models', vehicleModelsRouter)
 app.use('/vehicle-years', vehicleYearsRouter)
 app.use('/pricelists', priceListsRouter)
+app.use('/users', usersRouter)
 
 app.use((err, req, res, next) => {
   console.error(err)
