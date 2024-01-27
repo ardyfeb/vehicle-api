@@ -7,7 +7,7 @@ Run `npm run dev` to start development server with auto reload. Make sure all re
 
 ### Environment variables
 - `SECRET` for jwt token signing, required
-- `DATABASE_URL` database connection url, example: `postgresql://postgres:password@localhost:5432/database?schema=public`
+- `DATABASE_URL` database connection url, required. Example: `postgresql://postgres:password@localhost:5432/database?schema=public`
 - `PORT` port for server to listen 
 
 ### Deployment
